@@ -1,12 +1,7 @@
 const API_BASE_URL = 'http://localhost:5000/api'
 import { InterfaceUser } from '../../shared/logic/userInterface';
 
-export interface User extends Omit<InterfaceUser, 'name' | 'email' | 'password'> {
-  id?: string;
-  name: string;
-  email: string;
-  password: string;
-}
+export interface User extends Omit<InterfaceUser, 'name' | 'email' | 'password'> {}
 
 
 interface ResponseData {
